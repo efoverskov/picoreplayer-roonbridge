@@ -6,11 +6,6 @@
 useBusybox
 TARGET=`cat /etc/sysconfig/backup_device`
 
-
-cd /home/tc
-
-rm -f /home/tc/RoonBridge_linuxarmv7hf.tar.bz2
-
 pcp_write_var_to_config USER_COMMAND_1 ""
 
 sed -i '/.RoonBridge/d' /opt/.filetool.lst
